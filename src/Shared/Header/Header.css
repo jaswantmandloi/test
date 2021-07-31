@@ -1,0 +1,60 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.headerContainer .menus ul {
+  display: flex;
+  font-weight: 600;
+}
+
+.headerContainer .menus ul li {
+  padding: 0 15px;
+}
+
+.headerContainer .menus ul li a {
+  /* text-decoration: none; */
+  color: #506690;
+}
+
+.headerContainer .actionButtons button {
+  background-color: #2b50c7;
+  border-color: #294bbb;
+  color: #fff;
+  border-radius:8px;
+  font-size: 20px;
+  padding: 9px 16px;
+  border: none;
+}
+
+.headerContainer .actionButtons svg  {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .headerContainer .menus {
+    display: none;
+  }
+
+  .headerContainer .actionButtons {
+    height: 18px;
+    width: 50px;
+  }
+
+  .headerContainer .actionButtons svg {
+    height: 100%;
+    width: 100%;
+  }
+
+  .headerContainer .actionButtons button  {
+    display: none;
+  }
+
+  .headerContainer .actionButtons svg  {
+    display: block;
+    color: #506690;
+  }
+}

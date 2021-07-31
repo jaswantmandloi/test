@@ -1,0 +1,62 @@
+.welcomeSectionContainer {
+  display: flex;
+  padding-top: 96px;
+}
+
+.welcomeSectionContainer section:first-child h1 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #161c2d;
+}
+
+.welcomeSectionContainer section:first-child p {
+  margin-bottom: 48px;
+  color: #869ab8;
+}
+
+.welcomeSectionContainer section:first-child h1 span {
+  color: #335eea;
+}
+
+.welcomeSectionContainer section {
+  flex: 0 0 auto;
+  /* min-width: 50%; */
+  width: 50%;
+}
+.welcomeSectionContainer section img {
+  width: 100%;
+}
+
+.welcomeSectionContainer .buttons button {
+  padding: 13px 20px;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.welcomeSectionContainer .buttons button:first-child {
+  background-color: #335eea;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.welcomeSectionContainer .buttons button:last-child {
+  color: #335eea;
+  background-color: rgba(51,94,234,.15);
+}
+
+
+@media screen and (max-width: 792px) {
+  .welcomeSectionContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  .welcomeSectionContainer section {
+    text-align: center;
+    width: 100%;
+  }
+}

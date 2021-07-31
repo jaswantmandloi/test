@@ -1,0 +1,198 @@
+.grid-wrapper {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+.row {
+  display: flex;
+  align-items: center;
+}
+.col-4 {
+  width: 40%;
+  overflow: hidden;
+}
+.col-8 {
+  width: 60%;
+  overflow: hidden;
+}
+.col-5 {
+  width: 45%;
+  overflow: hidden;
+}
+.col-7 {
+  width: 55%;
+  overflow: hidden;
+}
+.banner-img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+svg {
+  transform: scale(2);
+  overflow: hidden;
+  width: fit-content;
+  color: #fff;
+  position: relative;
+  top: -4px;
+}
+.form {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 5px;
+}
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+/**
+* Add a transition to the label and input.
+* I'm not even sure that touch-action: manipulation works on
+* inputs, but hey, it's new and cool and could remove the
+* pesky delay.
+*/
+label,
+input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+input {
+  font-size: 14px;
+  border: 0;
+  border-bottom: 1px solid #f1f4f8;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 1px solid #666;
+}
+
+label {
+  letter-spacing: 0.05em;
+  color: #869ab8;
+}
+/**
+* Translate down and scale the label up to cover the placeholder,
+* when following an input (with placeholder-shown support).
+* Also make sure the label is only on one row, at max 2/3rds of the
+* field—to make sure it scales properly and doesn't wrap.
+*/
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 0.9rem) scale(1.5);
+  font-size: 10px;
+}
+/**
+* By default, the placeholder should be transparent. Also, it should
+* inherit the transition.
+*/
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+/**
+* Show the placeholder when the input is focused.
+*/
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+/**
+* When the element is focused, remove the label transform.
+* Also, do this when the placeholder is _not_ shown, i.e. when
+* there's something in the input at all.
+*/
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 55px;
+  border: none;
+  background-color: #389e80;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.green-h2 {
+  color: #42ba96;
+}
+.blue-h2 {
+  color: #335eea;
+}
+
+/* p {
+  color: #869ab8 !important;
+  font-size: 19px;
+  line-height: 30px;
+} */
+
+
+.grid-text {
+  margin-left: 100px;
+}
+.list {
+  display: flex;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+.w-50 {
+  display: flex;
+  width: 50%;
+}
+.circle {
+  background-color: #42ba96;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+}
+.circle-text {
+  color: #42ba96;
+}
+.mt-90 {
+  margin-top: 90px;
+}
+.img-section img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 25px 60px 125px -25px rgb(80 102 144 / 10%),
+    16px 40px 75px -40px rgb(0 0 0 / 20%);
+}
+.text-grid {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.point-text {
+  margin-left: 40px;
+}
+.text-grid svg {
+  top: 0;
+
+  left: 12px;
+}
+.text-grid p {
+  margin-top: 10px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.img-section {
+  margin-left: 30px;
+}
